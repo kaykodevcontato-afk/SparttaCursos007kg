@@ -1,7 +1,7 @@
 'use strict';
 
 const INSTAGRAM_URL = 'https://www.instagram.com/sparttacursoscaruaru/?hl=pt-br';
-const WHATSAPP_NUMBER = '558187094694';
+const WHATSAPP_NUMBER = '5581987094694';
 
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');

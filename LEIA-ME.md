@@ -37,7 +37,7 @@ Para testar com rapidez, altere temporariamente `durationHours` para `0.001` (3,
 
 ## Links e contatos
 
-- Inscrição e informações: WhatsApp +55 81 8709-4694.
+- Inscrição e informações: WhatsApp +55 (81) 9.8709-4694.
 - Instagram da escola: https://www.instagram.com/sparttacursoscaruaru/?hl=pt-br
 - Instagram do desenvolvedor: https://www.instagram.com/dev_okyak/?hl=pt-br
 
