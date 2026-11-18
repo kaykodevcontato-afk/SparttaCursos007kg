@@ -1,23 +1,46 @@
-# Spartta Cursos — Landing Page
+# Spartta Cursos — Prévia comercial (Dev.Kayko)
 
-Site responsivo para a Spartta Cursos de Caruaru.
+Landing page estática para GitHub Pages. Projeto com HTML, CSS, JavaScript e imagens locais.
 
-## Publicação no GitHub Pages
+## Arquivos
 
-1. Envie `index.html`, `style.css`, `script.js` e a pasta `assets` para a raiz do repositório.
-2. Em Settings > Pages, escolha Deploy from a branch e a branch principal.
-3. Acesse o endereço publicado.
+- `index.html` — estrutura e conteúdo da página.
+- `style.css` — layout, cores, responsividade e galeria.
+- `script.js` — menu, formulário do WhatsApp, galeria e botão flutuante.
+- `preview-access.js` — controla a prévia de **24 horas por navegador** e o redirecionamento.
+- `assets/` — logo e imagens usadas no site.
 
-## Instagram oficial
+## Como publicar
 
-https://www.instagram.com/sparttacursoscaruaru/?hl=pt-br
+Envie **todos** os arquivos e a pasta `assets/` para a raiz do repositório que publica o site no GitHub Pages. Preserve os nomes dos arquivos. Não é necessário instalar dependências.
 
-O Instagram já está linkado no menu, seção institucional, galeria, contato e rodapé.
+## Editar o acesso temporário
 
-## Matrículas
+Abra `preview-access.js` e altere as opções em `PREVIEW`:
 
-O formulário abre WhatsApp com nome, curso e mensagem preenchidos. Não há banco de dados nem envio automático de formulários.
+```js
+const PREVIEW = Object.freeze({
+  enabled: true, // false: desativa o prazo e deixa o site livre
+  durationHours: 24, // horas da prévia por navegador
+  redirectUrl: 'https://kaykodevcontato-afk.github.io/OrcamentoKG/',
+  storageKey: 'devkayko_spartta_preview_start_v1',
+});
+```
 
-## Antes de divulgar
+O prazo começa **no primeiro acesso daquele navegador** após a publicação e segue contando mesmo que a aba seja fechada. O prazo não fica visível na página. Se o visitante deixar a página aberta, ela também é redirecionada ao vencer o prazo.
 
-Confirme com a instituição os dados de endereço, telefone, 29 anos de experiência, ofertas e datas das turmas. As artes enviadas contêm datas de novembro de 2026, por isso o site evita anunciá-las como futuras.
+**Limitação essencial:** o contador usa `localStorage`. Não controla o mesmo prazo para todos os visitantes, nem impede acesso após limpeza do armazenamento, troca de navegador/dispositivo ou desativação de JavaScript. O código continua acessível por download, mesmo depois do prazo. Para um prazo **global e confiável**, configure uma verificação no servidor, por exemplo com Cloudflare Worker e uma data de expiração fixa.
+
+## Testar o vencimento
+
+Para testar com rapidez, altere temporariamente `durationHours` para `0.001` (3,6 segundos). Para reiniciar o teste no navegador atual, troque o valor de `storageKey` para uma chave nova. Depois, volte para `24` antes de publicar.
+
+## Links e contatos
+
+- Inscrição e informações: WhatsApp +55 81 8709-4694.
+- Instagram da escola: https://www.instagram.com/sparttacursoscaruaru/?hl=pt-br
+- Instagram do desenvolvedor: https://www.instagram.com/dev_okyak/?hl=pt-br
+
+## Galeria
+
+As fotos em **Preparação em Foco** exibem o mesmo fundo em grade do painel de mapa. Clique nas fotos para ampliar; feche clicando fora, no `×` ou pressionando `Esc`.

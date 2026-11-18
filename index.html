@@ -1,82 +1,656 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#07101f" />
-  <meta name="description" content="Spartta Cursos Caruaru — formação profissional em segurança privada, formação de vigilante, atualização e cursos de extensão. Fale conosco e solicite sua matrícula." />
-  <title>Spartta Cursos | Segurança Privada em Caruaru</title>
-  <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <a class="skip" href="#principal">Ir para o conteúdo</a>
+ <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="#07101f" name="theme-color">
+  <meta content="Spartta Cursos Caruaru &mdash; forma&ccedil;&atilde;o profissional em seguran&ccedil;a privada, forma&ccedil;&atilde;o de vigilante, atualiza&ccedil;&atilde;o e cursos de extens&atilde;o. Fale conosco e solicite sua matr&iacute;cula." name="description">
+  <title>
+   Spartta Cursos | Seguran&ccedil;a Privada em Caruaru
+  </title>
+  <link href="assets/logo.jpg" rel="icon" type="image/jpeg">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Controla o acesso à prévia de 24 horas antes da página ser exibida. -->
+  <script src="preview-access.js">
+  </script>
+  <link href="style.css" rel="stylesheet">
+ </head>
+ <body>
+  <a class="skip" href="#principal">
+   Ir para o conte&uacute;do
+  </a>
   <header class="header" id="inicio">
-    <div class="shell nav">
-      <a class="brand" href="#inicio" aria-label="Spartta Cursos - início">
-        <img src="assets/logo.jpg" alt="Logotipo Spartta Cursos" />
-        <span><strong>SPARTTA</strong><small>CURSOS · CARUARU</small></span>
-      </a>
-      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">☰</button>
-      <nav class="nav-links" id="navLinks" aria-label="Menu principal">
-        <a href="#sobre">A Spartta</a><a href="#cursos">Cursos</a><a href="#estrutura">Destaques</a><a href="#contato">Contato</a>
-        <a class="nav-instagram" href="https://www.instagram.com/sparttacursoscaruaru/?hl=pt-br" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial da Spartta Cursos (abre em nova aba)"><span class="nav-ig-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.2" y="2.2" width="19.6" height="19.6" rx="5.6"/><circle cx="12" cy="12" r="4.55"/><circle cx="17.75" cy="6.35" r="1.15" fill="currentColor" stroke="none"/></svg></span> Instagram</a>
-      </nav>
-      <a class="btn btn-red nav-cta" href="#inscricao">Quero me inscrever <span aria-hidden="true">↗</span></a>
-    </div>
+   <div class="shell nav">
+    <a aria-label="Spartta Cursos - in&iacute;cio" class="brand" href="#inicio">
+     <img alt="Logotipo Spartta Cursos" src="assets/logo.jpg">
+     <span>
+      <strong>
+       SPARTTA
+      </strong>
+      <small>
+       CURSOS &middot; CARUARU
+      </small>
+     </span>
+    </a>
+    <button aria-controls="navLinks" aria-expanded="false" aria-label="Abrir menu" class="menu-toggle" id="menuToggle" type="button">
+     ☰
+    </button>
+    <nav aria-label="Menu principal" class="nav-links" id="navLinks">
+     <a href="#sobre">
+      A Spartta
+     </a>
+     <a href="#cursos">
+      Cursos
+     </a>
+     <a href="#estrutura">
+      Destaques
+     </a>
+     <a href="#contato">
+      Contato
+     </a>
+     <a aria-label="Instagram oficial da Spartta Cursos (abre em nova aba)" class="nav-instagram" href="https://www.instagram.com/sparttacursoscaruaru/?hl=pt-br" rel="noopener noreferrer" target="_blank">
+      <span aria-hidden="true" class="nav-ig-icon">
+       <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <rect height="19.6" rx="5.6" width="19.6" x="2.2" y="2.2">
+        </rect>
+        <circle cx="12" cy="12" r="4.55">
+        </circle>
+        <circle cx="17.75" cy="6.35" fill="currentColor" r="1.15" stroke="none">
+        </circle>
+       </svg>
+      </span>
+      Instagram
+     </a>
+    </nav>
+    <a class="btn btn-red nav-cta" href="#inscricao">
+     Quero me inscrever
+     <span aria-hidden="true">
+      &nearrow;
+     </span>
+    </a>
+   </div>
   </header>
-
   <main id="principal">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-glow"></div><div class="grid-bg"></div>
-      <div class="shell hero-layout">
-        <div class="hero-copy">
-          <div class="eyebrow"><span class="live-dot"></span> FORMAÇÃO PROFISSIONAL · CARUARU / PE</div>
-          <h1 id="hero-title">SUA PRÓXIMA<br /><em>MISSÃO</em> COMEÇA<br />AQUI.</h1>
-          <p class="hero-lead">Prepare-se para atuar na segurança privada com a <strong>Spartta Cursos</strong>. Formação de vigilante, atualizações e extensões para desenvolver sua trajetória profissional.</p>
-          <div class="hero-buttons"><a class="btn btn-red btn-large" href="#inscricao">FAZER MINHA INSCRIÇÃO <span aria-hidden="true">↗</span></a><a class="btn btn-outline btn-large" href="#cursos">EXPLORAR CURSOS ↓</a></div>
-          <div class="hero-stats"><div><strong>29<span>+</span></strong><small>anos de experiência<sup>*</sup></small></div><span class="stat-divider"></span><div><strong>03</strong><small>áreas de formação</small></div><span class="stat-divider"></span><div><strong>PE</strong><small>Caruaru, Pernambuco</small></div></div>
-        </div>
-        <div class="hero-art"><div class="hero-art-ring ring-one"></div><div class="hero-art-ring ring-two"></div><img src="assets/vigilantes.jpg" alt="Material de divulgação da formação de vigilante Spartta Cursos" /><span class="hero-art-tag">DISCIPLINA <b>•</b> PREPARAÇÃO <b>•</b> FUTURO</span></div>
-      </div>
-      <div class="hero-bottom"><span>SPARTTA CURSOS</span><span>SEGURANÇA É PREPARAÇÃO</span><span>DESDE HÁ 29 ANOS*</span></div>
-    </section>
-
-    <section class="trust-band" aria-label="Diferenciais"><div class="shell trust-items"><span>◈ COMPROMISSO COM A FORMAÇÃO</span><span>✦ PREPARAÇÃO PROFISSIONAL</span><span>◎ FOCO NA SUA CARREIRA</span></div></section>
-
-    <section class="section intro" id="sobre"><div class="shell intro-layout"><div><p class="kicker">01 / QUEM SOMOS</p><h2>CONHECIMENTO QUE<br /><span>FAZ A DIFERENÇA.</span></h2></div><div class="intro-copy"><p>A <strong>Spartta Cursos</strong> atua na formação profissional em segurança privada em Caruaru, Pernambuco. Com <strong>29 anos de experiência informados pela instituição</strong>, oferece opções de formação, atualização e extensão.</p><p>Nosso propósito é conectar você à preparação necessária para avançar profissionalmente, com responsabilidade e dedicação.</p><a class="inline-link" href="https://www.instagram.com/sparttacursoscaruaru/?hl=pt-br" target="_blank" rel="noopener noreferrer">CONHEÇA NOSSO INSTAGRAM <span>↗</span></a></div></div></section>
-
-    <section class="section courses" id="cursos"><div class="shell"><div class="section-heading"><div><p class="kicker">02 / O QUE OFERECEMOS</p><h2>ESCOLHA SUA <span>MISSÃO.</span></h2></div><p>Formações e especializações voltadas para quem quer entrar ou se desenvolver no setor de segurança privada.</p></div>
-      <div class="course-grid">
-        <article class="course-card"><div class="course-num">01 / FORMAÇÃO</div><div class="course-icon">◈</div><h3>FORMAÇÃO DE<br />VIGILANTE</h3><p>Primeiro passo para quem deseja ingressar profissionalmente na área de segurança privada.</p><div class="course-footer"><span>FORMAÇÃO INICIAL</span><a href="#inscricao" data-course="Formação de Vigilante" aria-label="Inscrever-se em Formação de Vigilante">↗</a></div></article>
-        <article class="course-card selected"><div class="course-num">02 / ATUALIZAÇÃO</div><div class="course-icon">⟳</div><h3>ATUALIZAÇÃO DE<br />VIGILANTE</h3><p>Continue sua trajetória profissional e mantenha sua formação atualizada.</p><div class="course-footer"><span>RECICLAGEM PROFISSIONAL</span><a href="#inscricao" data-course="Atualização de Vigilante" aria-label="Inscrever-se em Atualização de Vigilante">↗</a></div></article>
-        <article class="course-card"><div class="course-num">03 / EXTENSÃO</div><div class="course-icon">⬡</div><h3>TRANSPORTE<br />DE VALORES</h3><p>Curso de extensão para profissionais que já possuem formação de vigilante, conforme requisitos aplicáveis.</p><div class="course-footer"><span>FORMAÇÃO COMPLEMENTAR</span><a href="#inscricao" data-course="Transporte de Valores" aria-label="Inscrever-se em Transporte de Valores">↗</a></div></article>
-      </div>
-      <p class="course-note">Abertura de turmas, duração, valores, documentos e requisitos são confirmados diretamente com a equipe da Spartta.</p>
-    </div></section>
-
-    <section class="section highlights" id="estrutura"><div class="shell"><div class="section-heading"><div><p class="kicker">03 / CONHEÇA MAIS</p><h2>PREPARAÇÃO EM <span>FOCO.</span></h2></div><p>Confira materiais de divulgação dos cursos e acompanhe as próximas novidades.</p></div><div class="visual-grid"><button class="visual-main lightbox-trigger" type="button" data-lightbox-image="assets/formacao.jpg" data-lightbox-title="Formação &amp; Atualização" data-lightbox-description="Clique para visualizar a arte em tamanho maior." aria-label="Abrir imagem Formação e Atualização em tamanho maior"><img src="assets/formacao.jpg" alt="Divulgação de atualização e formação de vigilantes" loading="lazy" /><div class="visual-label">FORMAÇÃO &amp; ATUALIZAÇÃO</div><span class="zoom-hint">CLIQUE PARA AMPLIAR ↗</span></button><button class="visual-side lightbox-trigger" type="button" data-lightbox-image="assets/transporte.jpg" data-lightbox-title="Cursos &amp; Extensões" data-lightbox-description="Clique para visualizar a arte em tamanho maior." aria-label="Abrir imagem Cursos e Extensões em tamanho maior"><img src="assets/transporte.jpg" alt="Divulgação de vigilante e transporte de valores" loading="lazy" /><div class="visual-label">CURSOS &amp; EXTENSÕES</div><span class="zoom-hint">CLIQUE PARA AMPLIAR ↗</span></button></div><div class="media-bottom"><button class="media-small lightbox-trigger" type="button" data-lightbox-image="assets/atualizacao.jpg" data-lightbox-title="Formação Profissional" data-lightbox-description="Clique para visualizar a arte em tamanho maior." aria-label="Abrir imagem Formação Profissional em tamanho maior"><img src="assets/atualizacao.jpg" alt="Divulgação de formação profissional de vigilante" loading="lazy" /><span class="zoom-hint">CLIQUE PARA AMPLIAR ↗</span></button><button class="media-small lightbox-trigger" type="button" data-lightbox-image="assets/turmas.jpg" data-lightbox-title="Próximas Turmas" data-lightbox-description="Clique para visualizar a arte em tamanho maior." aria-label="Abrir imagem Próximas Turmas em tamanho maior"><img src="assets/turmas.jpg" alt="Divulgação de turmas de atualização" loading="lazy" /><span class="zoom-hint">CLIQUE PARA AMPLIAR ↗</span></button><div class="media-cta"><span class="mini-tag">ACOMPANHE</span><h3>FIQUE POR DENTRO<br />DAS PRÓXIMAS TURMAS.</h3><p>Datas divulgadas em materiais anteriores podem estar encerradas. Consulte a equipe sobre novas vagas.</p><a class="inline-link" href="https://www.instagram.com/sparttacursoscaruaru/?hl=pt-br" target="_blank" rel="noopener noreferrer">VER INSTAGRAM OFICIAL ↗</a></div></div></div></section>
-
-    <section class="section signup" id="inscricao"><div class="shell signup-layout"><div><p class="kicker">04 / SUA INSCRIÇÃO</p><h2>PRONTO PARA <span>AVANÇAR?</span></h2><p>Selecione o curso de seu interesse e envie sua solicitação diretamente para o WhatsApp da Spartta Cursos. A equipe poderá orientar sobre turmas, documentos, valores e matrícula.</p><div class="signup-points"><span>✓ Atendimento direto</span><span>✓ Informações sobre novas turmas</span><span>✓ Sem cadastro no site</span></div></div><form id="signupForm" class="signup-form"><div class="form-tag">SOLICITAR INFORMAÇÕES</div><label for="name">SEU NOME</label><input id="name" name="name" placeholder="Como podemos chamar você?" required maxlength="90" /><label for="course">CURSO DE INTERESSE</label><select id="course" name="course" required><option value="">Selecione um curso</option><option>Formação de Vigilante</option><option>Atualização de Vigilante</option><option>Transporte de Valores</option><option>Outros cursos / Informações gerais</option></select><label for="message">MENSAGEM (OPCIONAL)</label><textarea id="message" name="message" rows="3" placeholder="Conte brevemente sua dúvida" maxlength="500"></textarea><button type="submit" class="btn btn-red submit-btn">ENVIAR PELO WHATSAPP ↗</button><small>O formulário abre uma conversa no WhatsApp. Nenhuma informação é armazenada neste site.</small></form></div></section>
-
-    <section class="section contact" id="contato"><div class="shell contact-layout"><div><p class="kicker">05 / FALE CONOSCO</p><h2>ENCONTRE A <span>SPARTTA.</span></h2><p>Visite nossa unidade em Caruaru ou entre em contato pelas redes oficiais.</p><div class="contact-links"><a href="https://wa.me/558187094694" target="_blank" rel="noopener noreferrer"><span class="contact-icon contact-icon--whatsapp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.1-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.009-.371-.01-.57-.01-.198 0-.52.074-.792.371-.272.297-1.04 1.016-1.04 2.479s1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.693.625.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.86 9.86 0 0 1-5.031-1.378l-.361-.214-3.741.981.998-3.647-.235-.374a9.86 9.86 0 0 1-1.51-5.26C2.17 6.448 6.61 2.01 12.054 2.01a9.82 9.82 0 0 1 6.98 2.892 9.82 9.82 0 0 1 2.893 6.983c-.002 5.45-4.44 9.89-9.876 9.89M20.52 3.43A11.82 11.82 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.893c0 2.096.547 4.142 1.588 5.945L0 24l6.3-1.653a11.88 11.88 0 0 0 5.75 1.465h.005c6.557 0 11.893-5.336 11.896-11.894A11.82 11.82 0 0 0 20.52 3.43"/></svg></span><span><small>WHATSAPP</small><strong>+55 (81) 8709-4694</strong></span><span>↗</span></a><a href="https://www.instagram.com/sparttacursoscaruaru/?hl=pt-br" target="_blank" rel="noopener noreferrer"><span class="contact-icon contact-icon--instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.2" y="2.2" width="19.6" height="19.6" rx="5.6"/><circle cx="12" cy="12" r="4.55"/><circle cx="17.75" cy="6.35" r="1.15" fill="currentColor" stroke="none"/></svg></span><span><small>INSTAGRAM OFICIAL</small><strong>@sparttacursoscaruaru</strong></span><span>↗</span></a><a href="https://www.google.com/maps/search/?api=1&query=Rua+Deolindo+Tavares+340+Mauricio+de+Nassau+Caruaru+PE" target="_blank" rel="noopener noreferrer"><span class="contact-icon contact-icon--address"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5.25-8 12-8 12S4 15.25 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.8"/></svg></span><span><small>ENDEREÇO</small><strong>Rua Deolindo Tavares, 340<br/>Maurício de Nassau, Caruaru - PE<br/>CEP 55012-670</strong></span><span>↗</span></a></div></div><div class="map-panel"><div class="map-fallback"><span class="map-cross">⌖</span><h3>CARUARU, PE</h3><p>Rua Deolindo Tavares, 340<br/>Maurício de Nassau</p><a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Rua+Deolindo+Tavares+340+Mauricio+de+Nassau+Caruaru+PE" target="_blank" rel="noopener noreferrer">ABRIR NO GOOGLE MAPS ↗</a></div></div></div></section>
-  </main>
-  <footer><div class="shell footer-content"><div class="footer-brand"><img src="assets/logo.jpg" alt="Spartta Cursos" /><div><strong>SPARTTA CURSOS</strong><small>FORMAÇÃO PROFISSIONAL EM SEGURANÇA PRIVADA</small></div></div><div class="footer-links"><a href="#inicio">Início</a><a href="#cursos">Cursos</a><a href="#inscricao">Inscrição</a><a href="https://www.instagram.com/sparttacursoscaruaru/?hl=pt-br" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div><p>© <span id="year"></span> Spartta Cursos. Informações de contato e histórico conforme dados fornecidos. <sup>*</sup>Tempo de atuação informado pela instituição.</p><div class="developer-credit">Desenvolvido por <a href="https://www.instagram.com/dev_okyak/?hl=pt-br" target="_blank" rel="noopener noreferrer" aria-label="Instagram do desenvolvedor Dev.Kayko, abre em outra aba">Dev.Kayko <span aria-hidden="true">↗</span></a></div></div></footer>
-  <a class="floating-wa" href="https://wa.me/558187094694?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20cursos%20da%20Spartta." target="_blank" rel="noopener noreferrer" aria-label="Falar com a Spartta pelo WhatsApp"><span class="floating-wa-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.1-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.009-.371-.01-.57-.01-.198 0-.52.074-.792.371-.272.297-1.04 1.016-1.04 2.479s1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.693.625.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.86 9.86 0 0 1-5.031-1.378l-.361-.214-3.741.981.998-3.647-.235-.374a9.86 9.86 0 0 1-1.51-5.26C2.17 6.448 6.61 2.01 12.054 2.01a9.82 9.82 0 0 1 6.98 2.892 9.82 9.82 0 0 1 2.893 6.983c-.002 5.45-4.44 9.89-9.876 9.89M20.52 3.43A11.82 11.82 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.893c0 2.096.547 4.142 1.588 5.945L0 24l6.3-1.653a11.88 11.88 0 0 0 5.75 1.465h.005c6.557 0 11.893-5.336 11.896-11.894A11.82 11.82 0 0 0 20.52 3.43"/></svg></span> <span>FALE COM A SPARTTA</span></a>
-  <div class="lightbox" id="imageLightbox" aria-hidden="true">
-    <div class="lightbox-backdrop" data-lightbox-close></div>
-    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
-      <button class="lightbox-close" type="button" id="lightboxClose" aria-label="Fechar visualização ampliada">×</button>
-      <img id="lightboxImage" src="" alt="Visualização ampliada da imagem selecionada" />
-      <div class="lightbox-meta">
-        <strong id="lightboxTitle">Imagem ampliada</strong>
-        <p id="lightboxDescription">Visualização ampliada da imagem selecionada.</p>
-      </div>
+   <section aria-labelledby="hero-title" class="hero">
+    <div class="hero-glow">
     </div>
+    <div class="grid-bg">
+    </div>
+    <div class="shell hero-layout">
+     <div class="hero-copy">
+      <div class="eyebrow">
+       <span class="live-dot">
+       </span>
+       FORMA&Ccedil;&Atilde;O PROFISSIONAL &middot; CARUARU / PE
+      </div>
+      <h1 id="hero-title">
+       SUA PR&Oacute;XIMA
+       <br>
+       <em>
+        MISS&Atilde;O
+       </em>
+       COME&Ccedil;A
+       <br>
+       AQUI.
+      </h1>
+      <p class="hero-lead">
+       Prepare-se para atuar na seguran&ccedil;a privada com a
+       <strong>
+        Spartta Cursos
+       </strong>
+       . Forma&ccedil;&atilde;o de vigilante, atualiza&ccedil;&otilde;es e extens&otilde;es para desenvolver sua trajet&oacute;ria profissional.
+      </p>
+      <div class="hero-buttons">
+       <a class="btn btn-red btn-large" href="#inscricao">
+        FAZER MINHA INSCRI&Ccedil;&Atilde;O
+        <span aria-hidden="true">
+         &nearrow;
+        </span>
+       </a>
+       <a class="btn btn-outline btn-large" href="#cursos">
+        EXPLORAR CURSOS &darr;
+       </a>
+      </div>
+      <div class="hero-stats">
+       <div>
+        <strong>
+         29
+         <span>
+          +
+         </span>
+        </strong>
+        <small>
+         anos de experi&ecirc;ncia
+         <sup>
+          *
+         </sup>
+        </small>
+       </div>
+       <span class="stat-divider">
+       </span>
+       <div>
+        <strong>
+         03
+        </strong>
+        <small>
+         &aacute;reas de forma&ccedil;&atilde;o
+        </small>
+       </div>
+       <span class="stat-divider">
+       </span>
+       <div>
+        <strong>
+         PE
+        </strong>
+        <small>
+         Caruaru, Pernambuco
+        </small>
+       </div>
+      </div>
+     </div>
+     <div class="hero-art">
+      <div class="hero-art-ring ring-one">
+      </div>
+      <div class="hero-art-ring ring-two">
+      </div>
+      <img alt="Material de divulga&ccedil;&atilde;o da forma&ccedil;&atilde;o de vigilante Spartta Cursos" src="assets/vigilantes.jpg">
+      <span class="hero-art-tag">
+       DISCIPLINA
+       <b>
+        &bull;
+       </b>
+       PREPARA&Ccedil;&Atilde;O
+       <b>
+        &bull;
+       </b>
+       FUTURO
+      </span>
+     </div>
+    </div>
+    <div class="hero-bottom">
+     <span>
+      SPARTTA CURSOS
+     </span>
+     <span>
+      SEGURAN&Ccedil;A &Eacute; PREPARA&Ccedil;&Atilde;O
+     </span>
+     <span>
+      DESDE H&Aacute; 29 ANOS*
+     </span>
+    </div>
+   </section>
+   <section aria-label="Diferenciais" class="trust-band">
+    <div class="shell trust-items">
+     <span>
+      ◈ COMPROMISSO COM A FORMA&Ccedil;&Atilde;O
+     </span>
+     <span>
+      ✦ PREPARA&Ccedil;&Atilde;O PROFISSIONAL
+     </span>
+     <span>
+      ◎ FOCO NA SUA CARREIRA
+     </span>
+    </div>
+   </section>
+   <section class="section intro" id="sobre">
+    <div class="shell intro-layout">
+     <div>
+      <p class="kicker">
+       01 / QUEM SOMOS
+      </p>
+      <h2>
+       CONHECIMENTO QUE
+       <br>
+       <span>
+        FAZ A DIFEREN&Ccedil;A.
+       </span>
+      </h2>
+     </div>
+     <div class="intro-copy">
+      <p>
+       A
+       <strong>
+        Spartta Cursos
+       </strong>
+       atua na forma&ccedil;&atilde;o profissional em seguran&ccedil;a privada em Caruaru, Pernambuco. Com
+       <strong>
+        29 anos de experi&ecirc;ncia informados pela institui&ccedil;&atilde;o
+       </strong>
+       , oferece op&ccedil;&otilde;es de forma&ccedil;&atilde;o, atualiza&ccedil;&atilde;o e extens&atilde;o.
+      </p>
+      <p>
+       Nosso prop&oacute;sito &eacute; conectar voc&ecirc; &agrave; prepara&ccedil;&atilde;o necess&aacute;ria para avan&ccedil;ar profissionalmente, com responsabilidade e dedica&ccedil;&atilde;o.
+      </p>
+      <a class="inline-link" href="https://www.instagram.com/sparttacursoscaruaru/?hl=pt-br" rel="noopener noreferrer" target="_blank">
+       CONHE&Ccedil;A NOSSO INSTAGRAM
+       <span>
+        &nearrow;
+       </span>
+      </a>
+     </div>
+    </div>
+   </section>
+   <section class="section courses" id="cursos">
+    <div class="shell">
+     <div class="section-heading">
+      <div>
+       <p class="kicker">
+        02 / O QUE OFERECEMOS
+       </p>
+       <h2>
+        ESCOLHA SUA
+        <span>
+         MISS&Atilde;O.
+        </span>
+       </h2>
+      </div>
+      <p>
+       Forma&ccedil;&otilde;es e especializa&ccedil;&otilde;es voltadas para quem quer entrar ou se desenvolver no setor de seguran&ccedil;a privada.
+      </p>
+     </div>
+     <div class="course-grid">
+      <article class="course-card">
+       <div class="course-num">
+        01 / FORMA&Ccedil;&Atilde;O
+       </div>
+       <div class="course-icon">
+        ◈
+       </div>
+       <h3>
+        FORMA&Ccedil;&Atilde;O DE
+        <br>
+        VIGILANTE
+       </h3>
+       <p>
+        Primeiro passo para quem deseja ingressar profissionalmente na &aacute;rea de seguran&ccedil;a privada.
+       </p>
+       <div class="course-footer">
+        <span>
+         FORMA&Ccedil;&Atilde;O INICIAL
+        </span>
+        <a aria-label="Inscrever-se em Forma&ccedil;&atilde;o de Vigilante" data-course="Forma&ccedil;&atilde;o de Vigilante" href="#inscricao">
+         &nearrow;
+        </a>
+       </div>
+      </article>
+      <article class="course-card selected">
+       <div class="course-num">
+        02 / ATUALIZA&Ccedil;&Atilde;O
+       </div>
+       <div class="course-icon">
+        ⟳
+       </div>
+       <h3>
+        ATUALIZA&Ccedil;&Atilde;O DE
+        <br>
+        VIGILANTE
+       </h3>
+       <p>
+        Continue sua trajet&oacute;ria profissional e mantenha sua forma&ccedil;&atilde;o atualizada.
+       </p>
+       <div class="course-footer">
+        <span>
+         RECICLAGEM PROFISSIONAL
+        </span>
+        <a aria-label="Inscrever-se em Atualiza&ccedil;&atilde;o de Vigilante" data-course="Atualiza&ccedil;&atilde;o de Vigilante" href="#inscricao">
+         &nearrow;
+        </a>
+       </div>
+      </article>
+      <article class="course-card">
+       <div class="course-num">
+        03 / EXTENS&Atilde;O
+       </div>
+       <div class="course-icon">
+        ⬡
+       </div>
+       <h3>
+        TRANSPORTE
+        <br>
+        DE VALORES
+       </h3>
+       <p>
+        Curso de extens&atilde;o para profissionais que j&aacute; possuem forma&ccedil;&atilde;o de vigilante, conforme requisitos aplic&aacute;veis.
+       </p>
+       <div class="course-footer">
+        <span>
+         FORMA&Ccedil;&Atilde;O COMPLEMENTAR
+        </span>
+        <a aria-label="Inscrever-se em Transporte de Valores" data-course="Transporte de Valores" href="#inscricao">
+         &nearrow;
+        </a>
+       </div>
+      </article>
+     </div>
+     <p class="course-note">
+      Abertura de turmas, dura&ccedil;&atilde;o, valores, documentos e requisitos s&atilde;o confirmados diretamente com a equipe da Spartta.
+     </p>
+    </div>
+   </section>
+   <section class="section highlights" id="estrutura">
+    <div class="shell">
+     <div class="section-heading">
+      <div>
+       <p class="kicker">
+        03 / CONHE&Ccedil;A MAIS
+       </p>
+       <h2>
+        PREPARA&Ccedil;&Atilde;O EM
+        <span>
+         FOCO.
+        </span>
+       </h2>
+      </div>
+      <p>
+       Confira materiais de divulga&ccedil;&atilde;o dos cursos e acompanhe as pr&oacute;ximas novidades.
+      </p>
+     </div>
+     <div class="visual-grid">
+      <button aria-label="Abrir imagem Forma&ccedil;&atilde;o e Atualiza&ccedil;&atilde;o em tamanho maior" class="visual-main lightbox-trigger" data-lightbox-description="Clique para visualizar a arte em tamanho maior." data-lightbox-image="assets/formacao.jpg" data-lightbox-title="Forma&ccedil;&atilde;o & Atualiza&ccedil;&atilde;o" type="button">
+       <img alt="Divulga&ccedil;&atilde;o de atualiza&ccedil;&atilde;o e forma&ccedil;&atilde;o de vigilantes" loading="lazy" src="assets/formacao.jpg">
+       <div class="visual-label">
+        FORMA&Ccedil;&Atilde;O & ATUALIZA&Ccedil;&Atilde;O
+       </div>
+       <span class="zoom-hint">
+        CLIQUE PARA AMPLIAR &nearrow;
+       </span>
+      </button>
+      <button aria-label="Abrir imagem Cursos e Extens&otilde;es em tamanho maior" class="visual-side lightbox-trigger" data-lightbox-description="Clique para visualizar a arte em tamanho maior." data-lightbox-image="assets/transporte.jpg" data-lightbox-title="Cursos & Extens&otilde;es" type="button">
+       <img alt="Divulga&ccedil;&atilde;o de vigilante e transporte de valores" loading="lazy" src="assets/transporte.jpg">
+       <div class="visual-label">
+        CURSOS & EXTENS&Otilde;ES
+       </div>
+       <span class="zoom-hint">
+        CLIQUE PARA AMPLIAR &nearrow;
+       </span>
+      </button>
+     </div>
+     <div class="media-bottom">
+      <button aria-label="Abrir imagem Forma&ccedil;&atilde;o Profissional em tamanho maior" class="media-small lightbox-trigger" data-lightbox-description="Clique para visualizar a arte em tamanho maior." data-lightbox-image="assets/atualizacao.jpg" data-lightbox-title="Forma&ccedil;&atilde;o Profissional" type="button">
+       <img alt="Divulga&ccedil;&atilde;o de forma&ccedil;&atilde;o profissional de vigilante" loading="lazy" src="assets/atualizacao.jpg">
+       <span class="zoom-hint">
+        CLIQUE PARA AMPLIAR &nearrow;
+       </span>
+      </button>
+      <button aria-label="Abrir imagem Pr&oacute;ximas Turmas em tamanho maior" class="media-small lightbox-trigger" data-lightbox-description="Clique para visualizar a arte em tamanho maior." data-lightbox-image="assets/turmas.jpg" data-lightbox-title="Pr&oacute;ximas Turmas" type="button">
+       <img alt="Divulga&ccedil;&atilde;o de turmas de atualiza&ccedil;&atilde;o" loading="lazy" src="assets/turmas.jpg">
+       <span class="zoom-hint">
+        CLIQUE PARA AMPLIAR &nearrow;
+       </span>
+      </button>
+      <div class="media-cta">
+       <span class="mini-tag">
+        ACOMPANHE
+       </span>
+       <h3>
+        FIQUE POR DENTRO
+        <br>
+        DAS PR&Oacute;XIMAS TURMAS.
+       </h3>
+       <p>
+        Datas divulgadas em materiais anteriores podem estar encerradas. Consulte a equipe sobre novas vagas.
+       </p>
+       <a class="inline-link" href="https://www.instagram.com/sparttacursoscaruaru/?hl=pt-br" rel="noopener noreferrer" target="_blank">
+        VER INSTAGRAM OFICIAL &nearrow;
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section signup" id="inscricao">
+    <div class="shell signup-layout">
+     <div>
+      <p class="kicker">
+       04 / SUA INSCRI&Ccedil;&Atilde;O
+      </p>
+      <h2>
+       PRONTO PARA
+       <span>
+        AVAN&Ccedil;AR?
+       </span>
+      </h2>
+      <p>
+       Selecione o curso de seu interesse e envie sua solicita&ccedil;&atilde;o diretamente para o WhatsApp da Spartta Cursos. A equipe poder&aacute; orientar sobre turmas, documentos, valores e matr&iacute;cula.
+      </p>
+      <div class="signup-points">
+       <span>
+        &checkmark; Atendimento direto
+       </span>
+       <span>
+        &checkmark; Informa&ccedil;&otilde;es sobre novas turmas
+       </span>
+       <span>
+        &checkmark; Sem cadastro no site
+       </span>
+      </div>
+     </div>
+     <form class="signup-form" id="signupForm">
+      <div class="form-tag">
+       SOLICITAR INFORMA&Ccedil;&Otilde;ES
+      </div>
+      <label for="name">
+       SEU NOME
+      </label>
+      <input id="name" maxlength="90" name="name" placeholder="Como podemos chamar voc&ecirc;?" required>
+      <label for="course">
+       CURSO DE INTERESSE
+      </label>
+      <select id="course" name="course" required>
+       <option value>
+        Selecione um curso
+       </option>
+       <option>
+        Forma&ccedil;&atilde;o de Vigilante
+       </option>
+       <option>
+        Atualiza&ccedil;&atilde;o de Vigilante
+       </option>
+       <option>
+        Transporte de Valores
+       </option>
+       <option>
+        Outros cursos / Informa&ccedil;&otilde;es gerais
+       </option>
+      </select>
+      <label for="message">
+       MENSAGEM (OPCIONAL)
+      </label>
+      <textarea id="message" maxlength="500" name="message" placeholder="Conte brevemente sua d&uacute;vida" rows="3"></textarea>
+      <button class="btn btn-red submit-btn" type="submit">
+       ENVIAR PELO WHATSAPP &nearrow;
+      </button>
+      <small>
+       O formul&aacute;rio abre uma conversa no WhatsApp. Nenhuma informa&ccedil;&atilde;o &eacute; armazenada neste site.
+      </small>
+     </form>
+    </div>
+   </section>
+   <section class="section contact" id="contato">
+    <div class="shell contact-layout">
+     <div>
+      <p class="kicker">
+       05 / FALE CONOSCO
+      </p>
+      <h2>
+       ENCONTRE A
+       <span>
+        SPARTTA.
+       </span>
+      </h2>
+      <p>
+       Visite nossa unidade em Caruaru ou entre em contato pelas redes oficiais.
+      </p>
+      <div class="contact-links">
+       <a href="https://wa.me/558187094694" rel="noopener noreferrer" target="_blank">
+        <span class="contact-icon contact-icon--whatsapp">
+         <svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.1-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.009-.371-.01-.57-.01-.198 0-.52.074-.792.371-.272.297-1.04 1.016-1.04 2.479s1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.693.625.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.86 9.86 0 0 1-5.031-1.378l-.361-.214-3.741.981.998-3.647-.235-.374a9.86 9.86 0 0 1-1.51-5.26C2.17 6.448 6.61 2.01 12.054 2.01a9.82 9.82 0 0 1 6.98 2.892 9.82 9.82 0 0 1 2.893 6.983c-.002 5.45-4.44 9.89-9.876 9.89M20.52 3.43A11.82 11.82 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.893c0 2.096.547 4.142 1.588 5.945L0 24l6.3-1.653a11.88 11.88 0 0 0 5.75 1.465h.005c6.557 0 11.893-5.336 11.896-11.894A11.82 11.82 0 0 0 20.52 3.43">
+          </path>
+         </svg>
+        </span>
+        <span>
+         <small>
+          WHATSAPP
+         </small>
+         <strong>
+          +55 (81) 8709-4694
+         </strong>
+        </span>
+        <span>
+         &nearrow;
+        </span>
+       </a>
+       <a href="https://www.instagram.com/sparttacursoscaruaru/?hl=pt-br" rel="noopener noreferrer" target="_blank">
+        <span class="contact-icon contact-icon--instagram">
+         <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <rect height="19.6" rx="5.6" width="19.6" x="2.2" y="2.2">
+          </rect>
+          <circle cx="12" cy="12" r="4.55">
+          </circle>
+          <circle cx="17.75" cy="6.35" fill="currentColor" r="1.15" stroke="none">
+          </circle>
+         </svg>
+        </span>
+        <span>
+         <small>
+          INSTAGRAM OFICIAL
+         </small>
+         <strong>
+          @sparttacursoscaruaru
+         </strong>
+        </span>
+        <span>
+         &nearrow;
+        </span>
+       </a>
+       <a href="https://www.google.com/maps/search/?api=1&query=Rua+Deolindo+Tavares+340+Mauricio+de+Nassau+Caruaru+PE" rel="noopener noreferrer" target="_blank">
+        <span class="contact-icon contact-icon--address">
+         <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 10c0 5.25-8 12-8 12S4 15.25 4 10a8 8 0 1 1 16 0Z">
+          </path>
+          <circle cx="12" cy="10" r="2.8">
+          </circle>
+         </svg>
+        </span>
+        <span>
+         <small>
+          ENDERE&Ccedil;O
+         </small>
+         <strong>
+          Rua Deolindo Tavares, 340
+          <br>
+          Maur&iacute;cio de Nassau, Caruaru - PE
+          <br>
+          CEP 55012-670
+         </strong>
+        </span>
+        <span>
+         &nearrow;
+        </span>
+       </a>
+      </div>
+     </div>
+     <div class="map-panel">
+      <div class="map-fallback">
+       <span class="map-cross">
+        &target;
+       </span>
+       <h3>
+        CARUARU, PE
+       </h3>
+       <p>
+        Rua Deolindo Tavares, 340
+        <br>
+        Maur&iacute;cio de Nassau
+       </p>
+       <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Rua+Deolindo+Tavares+340+Mauricio+de+Nassau+Caruaru+PE" rel="noopener noreferrer" target="_blank">
+        ABRIR NO GOOGLE MAPS &nearrow;
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <div class="shell footer-content">
+    <div class="footer-brand">
+     <img alt="Spartta Cursos" src="assets/logo.jpg">
+     <div>
+      <strong>
+       SPARTTA CURSOS
+      </strong>
+      <small>
+       FORMA&Ccedil;&Atilde;O PROFISSIONAL EM SEGURAN&Ccedil;A PRIVADA
+      </small>
+     </div>
+    </div>
+    <div class="footer-links">
+     <a href="#inicio">
+      In&iacute;cio
+     </a>
+     <a href="#cursos">
+      Cursos
+     </a>
+     <a href="#inscricao">
+      Inscri&ccedil;&atilde;o
+     </a>
+     <a href="https://www.instagram.com/sparttacursoscaruaru/?hl=pt-br" rel="noopener noreferrer" target="_blank">
+      Instagram &nearrow;
+     </a>
+    </div>
+    <p>
+     &copy;
+     <span id="year">
+     </span>
+     Spartta Cursos. Informa&ccedil;&otilde;es de contato e hist&oacute;rico conforme dados fornecidos.
+     <sup>
+      *
+     </sup>
+     Tempo de atua&ccedil;&atilde;o informado pela institui&ccedil;&atilde;o.
+    </p>
+    <div class="developer-credit">
+     Desenvolvido por
+     <a aria-label="Instagram do desenvolvedor Dev.Kayko, abre em outra aba" href="https://www.instagram.com/dev_okyak/?hl=pt-br" rel="noopener noreferrer" target="_blank">
+      Dev.Kayko
+      <span aria-hidden="true">
+       &nearrow;
+      </span>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <a aria-label="Falar com a Spartta pelo WhatsApp" class="floating-wa" href="https://wa.me/558187094694?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20cursos%20da%20Spartta." rel="noopener noreferrer" target="_blank">
+   <span class="floating-wa-icon">
+    <svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.1-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.009-.371-.01-.57-.01-.198 0-.52.074-.792.371-.272.297-1.04 1.016-1.04 2.479s1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.693.625.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.86 9.86 0 0 1-5.031-1.378l-.361-.214-3.741.981.998-3.647-.235-.374a9.86 9.86 0 0 1-1.51-5.26C2.17 6.448 6.61 2.01 12.054 2.01a9.82 9.82 0 0 1 6.98 2.892 9.82 9.82 0 0 1 2.893 6.983c-.002 5.45-4.44 9.89-9.876 9.89M20.52 3.43A11.82 11.82 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.893c0 2.096.547 4.142 1.588 5.945L0 24l6.3-1.653a11.88 11.88 0 0 0 5.75 1.465h.005c6.557 0 11.893-5.336 11.896-11.894A11.82 11.82 0 0 0 20.52 3.43">
+     </path>
+    </svg>
+   </span>
+   <span>
+    FALE COM A SPARTTA
+   </span>
+  </a>
+  <div aria-hidden="true" class="lightbox" id="imageLightbox">
+   <div class="lightbox-backdrop" data-lightbox-close>
+   </div>
+   <div aria-labelledby="lightboxTitle" aria-modal="true" class="lightbox-dialog" role="dialog">
+    <button aria-label="Fechar visualiza&ccedil;&atilde;o ampliada" class="lightbox-close" id="lightboxClose" type="button">
+     &times;
+    </button>
+    <img alt="Visualiza&ccedil;&atilde;o ampliada da imagem selecionada" id="lightboxImage" src>
+    <div class="lightbox-meta">
+     <strong id="lightboxTitle">
+      Imagem ampliada
+     </strong>
+     <p id="lightboxDescription">
+      Visualiza&ccedil;&atilde;o ampliada da imagem selecionada.
+     </p>
+    </div>
+   </div>
   </div>
-  <script src="script.js"></script>
-</body>
+  <script src="script.js">
+  </script>
+ </body>
 </html>
